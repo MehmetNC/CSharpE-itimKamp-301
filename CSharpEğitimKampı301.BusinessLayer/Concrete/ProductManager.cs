@@ -33,6 +33,11 @@ namespace CSharpEğitimKampı301.BusinessLayer.Concrete
             return _productDal.GetById(id);
         }
 
+        public List<object> TGetProdusctsWithCategory()
+        {
+            return _productDal.GetProdusctsWithCategory();
+        }
+
         public void TInsert(Product entity)
         {
             _productDal.Insert(entity);
